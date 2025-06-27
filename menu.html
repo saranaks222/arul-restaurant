@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Arul Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffef9;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .shrink .navbar {
+      padding: 0.5rem 2rem;
+      background-color: rgba(217, 35, 15, 0.9);
+      backdrop-filter: blur(6px);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d9230f;
+      padding: 1rem 2rem;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-page {
+      padding: 6rem 2rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .menu-page h1 {
+      font-size: 2rem;
+      color: #d9230f;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .menu-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .menu-section h2 {
+      color: #d9230f;
+      border-bottom: 2px solid #f5c9b5;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .menu-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu-section li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f0e0d8;
+      font-size: 1rem;
+    }
+
+    .menu-section li span:last-child {
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #d9230f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="mainHeader">
+    <nav class="navbar">
+      <div class="logo">Arul Restaurant</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="menu-page">
+    <h1>Our Menu</h1>
+
+    <div class="menu-section">
+      <h2>🍽️ Dosai Menu</h2>
+      <ul>
+        <li><span>Dosa</span><span>₹20</span></li>
+        <li><span>Uttapam</span><span>₹20</span></li>
+        <li><span>Rost</span><span>₹30</span></li>
+        <li><span>Onion Dosai</span><span>₹35</span></li>
+        <li><span>Onion Uthappam</span><span>₹35</span></li>
+        <li><span>Egg Uthappam</span><span>₹35</span></li>
+        <li><span>Carrot Uthappam</span><span>₹35</span></li>
+        <li><span>Carrot Onion Uthappam</span><span>₹40</span></li>
+        <li><span>Egg Onion Uthappam</span><span>₹50</span></li>
+        <li><span>Egg Dosa</span><span>₹35</span></li>
+        <li><span>Ghee Rost</span><span>₹50</span></li>
+        <li><span>Onion Rost</span><span>₹40</span></li>
+        <li><span>Kal Dosa</span><span>₹20</span></li>
+        <li><span>Kal Egg Dosa</span><span>₹35</span></li>
+        <li><span>Double Egg Dosa</span><span>₹50</span></li>
+        <li><span>Podi Uthappam</span><span>₹25</span></li>
+        <li><span>Onion Podi Uthappam</span><span>₹40</span></li>
+        <li><span>Egg Rost</span><span>₹40</span></li>
+        <li><span>Family Dosa</span><span>₹120</span></li>
+        <li><span>Masala Dosa</span><span>₹80</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-section">
+      <h2>🥘 Parotta</h2>
+      <ul>
+        <li><span>Parotta</span><span>₹20</span></li>
+        <li><span>Plain Veesu Parotta</span><span>₹20</span></li>
+        <li><span>Egg Veesu Parotta</span><span>₹30</span></li>
+        <li><span>Egg Kothu Parotta</span><span>₹80</span></li>
+        <li><span>Veg Kothu Parotta</span><span>₹60</span></li>
+        <li><span>Onion Veesu</span><span>₹40</span></li>
+        <li><span>Iappa Parotta</span><span>₹50</span></li>
+        <li><span>Kizhi Parotta</span><span>₹100</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-section">
+      <h2>🍳 Egg</h2>
+      <ul>
+        <li><span>Regular Omelette</span><span>₹15</span></li>
+        <li><span>Half Boiled</span><span>₹15</span></li>
+        <li><span>Full Boiled</span><span>₹15</span></li>
+        <li><span>Kalaki</span><span>₹15</span></li>
+        <li><span>Double Omelette</span><span>₹30</span></li>
+        <li><span>Plain Omelette</span><span>₹15</span></li>
+        <li><span>Podimas</span><span>₹30</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-section">
+      <h2>🍛 Rice</h2>
+      <ul>
+        <li><span>Veg Rice</span><span>₹60</span></li>
+        <li><span>Chicken Rice</span><span>₹80</span></li>
+        <li><span>Egg Rice</span><span>₹70</span></li>
+        <li><span>Chicken 65 (250g)</span><span>₹100</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-section">
+      <h2>☕ Tea & Drinks</h2>
+      <ul>
+        <li><span>Tea</span><span>₹10</span></li>
+        <li><span>Coffee</span><span>₹15</span></li>
+        <li><span>Milk</span><span>₹15</span></li>
+        <li><span>Horlicks</span><span>₹20</span></li>
+        <li><span>Boost</span><span>₹20</span></li>
+        <li><span>Black Tea</span><span>₹20</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arul Restaurant | Call us: 9442456553</p>
+  </footer>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.getElementById("mainHeader");
+      header.classList.toggle("shrink", window.scrollY > 50);
+    });
+  </script>
+
+</body>
+</html>
